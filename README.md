@@ -187,7 +187,7 @@ An object containing options properties
 | `url`         | String                                           | ✅        | All       | URL to file you want to download                                                                                                                                                 |
 | `destination` | String                                           | ✅        | All       | Where to copy the file to once the download is done                                                                                                                              |
 | `headers`      | Object                                           |           | All       | Costume headers to add to the download request. These are merged with the headers given in the `setHeaders` function
-| `priority`    | [Priority (enum)](#priority-enum---android-only) |          | Android   | The priority of the download. On Android, downloading is limited to 4 simultaneous instances where further downloads are queued. Priority helps in deciding which download to pick next from the queue. **Default:** Priority.MEDIUM |
+| `priority`    | [Priority (enum)](#priority-enum---android-only) |          | Android   | The priority of the download. On Android, downloading is limited to 20 simultaneous instances where further downloads are queued. Priority helps in deciding which download to pick next from the queue. **Default:** Priority.MEDIUM |
 | `network`     | [Network (enum)](#network-enum---android-only)   |          | Android   | Give your the ability to limit the download to WIFI only. **Default:** Network.ALL                                                                                               |
 
 **returns**
